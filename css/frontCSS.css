@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	height: 100vh;
+	background: none;
+	background-color: black;
+}
+.container-fluid {
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#gif {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+#infobutton {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-left: 94%;
+	bottom: 18px;
+	background-color: rgba(6, 167, 224, 0.7);
+	font-family: baskerville;
+	font-style: italic;
+	color: rgba(255, 255, 255, 1.0);
+}
+#rebutton {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-left: 1%;
+	width: 80px;
+	height: 40px;
+	bottom: -23px;
+	background-color: rgba(6, 167, 224, 0.7);
+	font-family: "Lucida Grande", "Arial", sans-serif;
+	color: rgba(255, 255, 255, 1.0);
+}
+.btn-circle2 {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 24px;
+	line-height: 1.12;
+	border-radius: 80px;
+}
+#infobutton:hover, #rebutton:hover {
+	background-color: rgb(33, 52, 105);
+}

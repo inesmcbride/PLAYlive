@@ -1,0 +1,73 @@
+@import url("search_widget_generic.css");
+
+#dnz_search_header {
+	border-bottom: 1px solid #76B399;
+}
+#dnz_search_header h3 {
+	color: #002a30;
+	background: #D4F1E3;
+	border-left: 1px solid #BCCEBA;
+	border-right: 1px solid #BCCEBA;
+}
+#dnz_search_header h3 span {
+	color: #003A49;
+}
+#dnz_search_top_images img {
+	border: 2px solid #117582;
+}
+#dnz_search a {
+	color: #003A49 !important;
+}
+#dnz_search_top a, #dnz_search #dnz_show_more {
+	color: #1c1c1c !important;
+}
+.dnz_search_block {
+	background: #E5FBF0;
+	border-left: 1px solid #76B399;
+	border-right: 1px solid #76B399;
+	border-bottom: 1px solid #76B399;
+}
+.dnz_search_block p {
+	color: #00181C !important;
+}
+#dnz_search_footer div.dnz_wrapper div {
+	border-left: 1px solid #BCCEBA;
+	border-right: 1px solid #BCCEBA;
+	background: #D0EBDF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

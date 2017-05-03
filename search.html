@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="img/logo.ico"/>
+<title>facePLAY</title>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/search_widget_generic.css"/>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+<script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class=" contentarea">
+      <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton" class="btn btn-circle" type="submit">TAKE MY <br>
+        PHOTO</button>
+      </div>
+      <canvas id="canvas"> </canvas>
+    </div>
+  </div>
+  <div class="resultsarea">
+    <div class="col-md-6 output"> <img  id="photo">
+      <div id="icons"> <a class="btn btn-social-icon btn-facebook"> <span class="fa fa-facebook fa-2x"></span> </a> <a class="btn btn-social-icon btn-instagram"> <span class="fa fa-instagram fa-2x"></span> </a> <a class="btn btn-social-icon btn-mail"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a> </div>
+    </div>
+    <div class="col-md-6">
+      <div id="dnz_search"> 
+        <form accept-charset="UNKNOWN" action="http://www.digitalnz.org/records" enctype="application/x-www-form-urlencoded" id="dnz_search_form" method="get">
+          <p id="dnz_fields">  
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div> <a href="search.html" id="rebutton" class="btn btn-circle3" type="submit">
+    <st>Play Again</st>
+    </a> <a href="info.html" id="infobutton" class="btn btn-circle2" type="submit">
+    <st>i</st>
+    </a> </div>
+</div>
+<footer id="foot">
+  <div align="center"> <img  id="logoPlay" src="img/PLAYLogoWhite.png"> <img  id="logobottom" src="img/poweredwhite.png" alt="Powered by Digital NZ"> </div>
+</footer>
+<script src="js/dnz_search_widget.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+        function DNZOptions() { 
+          DNZSearch.APIDomain = 'http://api.digitalnz.org/'; 
+          DNZSearch.hostedDomain = 'http://www.digitalnz.org/'; 
+          // Please add your DigitalNZ API key below in the function parameter DNZSearch.APIKey = 'YOUR_API_KEY'
+          DNZSearch.APIKey = 'SqPrzGM5-FFkyf3a3UqE'; 
+          // You can choose a stylesheet from css folder and add to DNZSearch.stylesheet. Default is widget_red.css 
+          DNZSearch.stylesheet = 'widget_red.css';
+          // The number of results displays in search.
+          DNZSearch.numberOfResults = 4; 
+        }
+      </script> 
+<script src="js/capture.js"></script> 
+<script>
+	$(document).ready(function() {
+		$(".resultsarea").hide();
+		$("#infobutton, #rebutton").hide();
+    $("#startbutton").click(function(){
+		$(".resultsarea").show();
+		$("#infobutton, #rebutton").show();
+		$(".contentarea").hide();
+		$("#dnz_fields").hide();
+	});
+});
+		
+		var timer = null;
+
+function goAway() {
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+        window.location = 'index.html';
+    }, 300000);
+}
+
+window.addEventListener('mousemove', goAway, true);
+
+goAway();  
+</script>
+</body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos-->
+<!--http://stackoverflow.com/questions/10825263/how-to-alter-this-code-so-that-it-only-redirects-if-there-is-no-mouse-movement-->

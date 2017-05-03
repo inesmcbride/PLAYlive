@@ -1,0 +1,89 @@
+@charset "UTF-8";
+html {
+	min-height: 100%;
+	position: relative;
+}
+p {
+	color: white;
+}
+body {
+	background-color: black;
+	padding-bottom: 120px;
+}
+.container-fluid {
+	max-width: 100vh;
+}
+#toplogo {
+	width: 80%;
+}
+#div1, #div2 {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#startbutton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(6, 167, 224, 0.7);
+	border: rgba(6, 167, 224, 0.7);
+	font-size: 18px;
+	font-family: "Lucida Grande", "Arial", sans-serif;
+	color: rgba(255, 255, 255, 1.0);
+}
+#startbutton:hover {
+	background-color: rgb(33, 52, 105);
+}
+.btn-circle {
+	width: 110px;
+	height: 110px;
+	text-align: center;
+	padding: 6px 0;
+	line-height: 1.42;
+	border-radius: 80px;
+}
+#foot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+#div4 p {
+	font-size: 40px;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+p {
+	font-size: 40px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+p {
+	font-size: 30px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+p {
+	font-size: 20px;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+p {
+	font-size: 20px;
+}
+}

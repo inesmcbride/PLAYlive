@@ -1,0 +1,73 @@
+@import url("search_widget_generic.css");
+
+#dnz_search_header {
+/*	border-bottom: 1px solid #E0D092;*/
+}
+#dnz_search_header h3 {
+	color: white;
+	background: white;
+/*	border-left: 1px solid #D6CDAD;*/
+/*	border-right: 1px solid #D6CDAD;*/
+}
+#dnz_search_header h3 span {
+	color: #872C09;
+}
+#dnz_search_top_images img {
+/*	border: 2px solid #006098;*/
+}
+#dnz_search a {
+	color: #872C09 !important;
+}
+#dnz_search_top a, #dnz_search #dnz_show_more {
+	color: #1c1c1c !important;
+}
+.dnz_search_block {
+/*	background: white;*/
+/*	border-left: 1px solid #D9C9A4;*/
+/*	border-right: 1px solid #D9C9A4;*/
+/*	border-bottom: 1px solid #E0D092;*/
+}
+.dnz_search_block p {
+	color: #432204 !important;
+}
+#dnz_search_footer div.dnz_wrapper div {
+	border: 1px solid #BCCEBA;
+/*	border-right: 1px solid #BCCEBA;*/
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
