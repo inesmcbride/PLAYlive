@@ -1,0 +1,8 @@
+
+inesmcbride.github.io/PLAYlive
+
+- Intended to be viewed in landscape orientation on a tablet / iPad.
+
+- Camera access needs to be allowed 
+
+- The use of unsafe scripts needs to be enable in order to run the DigitalNZ API.
